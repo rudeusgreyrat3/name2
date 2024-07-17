@@ -1,0 +1,1308 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{ 
+    --main-font: "Open Sans", sans-serif;
+    --main-color-green: #6FF3A4; 
+    --main-color-black: #232323; 
+    --main-color-white: white;
+}
+
+a{
+    font-family: var(--main-font);
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: var(--main-font);
+}
+*{ 
+    margin: 0; 
+    padding: 0; 
+    bottom: 0; 
+    box-sizing: border-box; 
+    transition: all 0.3 ease-in-out;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button, input{
+    font-weight: 400px;
+}
+
+.header-burger{
+    display: none;
+}
+
+.header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0; 
+    margin: auto; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.navigation{
+    font-size: 20px;
+    display: flex;
+    gap: 75px;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    width: 44px;
+    height: 44px;
+    margin-top: 30px;
+}
+
+.icon i {
+    width: 44px;
+    height: 44px;
+}
+
+.banner-wrapper {
+    background-color: var(--main-color-green);
+
+}
+
+.banner-wrapper2{
+    display: flex;
+    gap: 100px;
+}
+
+.banner-info{
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: center;
+    gap: 73px;
+}
+
+.banner-img img{
+    width: 500px;
+    height: 500px;
+    display: none;
+}
+
+.banner-text{
+    font-size: 32px;
+    color: var(--main-color-black);
+    font-weight: 700;
+}
+
+.banner-button{
+    display: flex;
+    gap: 68px;
+    
+}
+
+.banner-button button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+    border: 2px solid transparent; 
+    background-color: var(--main-color-white); 
+    padding: 16px 78px; 
+    border-radius: 40px; 
+
+    font-size: 16px; 
+    font-weight: 700; 
+    color: var(--main-color-black);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-button button:hover {
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+
+}
+
+.banner-button p{
+    font-size: 20px;
+}
+
+.razdel-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+
+    margin-top: 100px;
+}
+
+.razdel-wrapper h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.razdel-wrapper img{
+    margin-top: 20px;
+}
+
+.hit-wrapper{
+    margin-top: 100px;
+}
+
+.hit-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.hit-product-top{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 100px 180px;
+
+    margin-top: 50px;
+}
+
+
+
+.top-product1 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.top-product1-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-product1-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-product1-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.top-product2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.top-product2-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-product2-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-product2-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.top-product3 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.top-product3-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-product3-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-product3-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-product1{
+    margin-top: 15px;
+}
+
+.bottom-product1 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.bottom-product1-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-product1-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-product1-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-product2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.bottom-product2-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-product2-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px; 
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-product2-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-product3{
+    margin-top: 15px;
+}
+
+.bottom-product3 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+.bottom-product3-button{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-product3-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-product3-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.novinki-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.top-novinki{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 180px;
+    margin-top: 50px;
+}
+
+.middle-novinki{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 180px;
+    margin-top: 72px;
+}
+
+.bottom-novinki{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 180px;
+    margin-top: 72px;
+}
+
+.top-novinki-products1{
+    margin-top: 40px;
+}
+
+.top-text1{
+    margin-top: 15px;
+}
+
+.top-knopki1{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.top-knopka-button1{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-knopka-button1 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-knopka-button1 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.top-knopki1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.top-text2{
+    margin-top: 15px;
+}
+
+.top-knopki2{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.top-knopka-button2{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-knopka-button2 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-knopka-button2 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.top-novinki-products3{
+    margin-top: 40px;
+}
+
+.top-knopki2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.top-text3{
+    margin-top: 15px;
+}
+
+.top-knopki3{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.top-knopka-button3{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.top-knopka-button3 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.top-knopka-button3 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.top-knopki3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.middle-text1{
+    margin-top: 15px;
+}
+
+.middle-knopki1{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.middle-knopka-button1{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.middle-knopka-button1 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-knopka-button1 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.middle-knopki1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.middle-text2{
+    margin-top: 15px;
+}
+
+.middle-knopki2{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.middle-knopka-button2{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.middle-knopka-button2 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-knopka-button2 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.middle-knopki2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.middle-text3{
+    margin-top: 15px;
+}
+
+.middle-knopki3{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.middle-knopka-button3{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.middle-knopka-button3 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.middle-knopka-button3 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.middle-knopki3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-text1{
+    margin-top: 15px;
+}
+
+.bottom-knopki1{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.bottom-knopka-button1{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-knopka-button1 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-knopka-button1 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-knopki1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-text2{
+    margin-top: 15px;
+}
+
+.bottom-knopki2{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.bottom-knopka-button1{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-knopka-button2 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-knopka-button2 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-knopki2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-novinki-products3{
+    margin-top: 10px;
+}
+
+.bottom-text3{
+    margin-top: 15px;
+}
+
+.bottom-knopki3{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.bottom-knopka-button3{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    align-items: center;
+    outline: none; 
+}
+
+.bottom-knopka-button3 button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 25px;  
+    border-radius: 5px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.bottom-knopka-button3 button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.bottom-knopki3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.rassilka-wrapper{
+    display: flex;
+    padding: 0 30px;
+    gap: 150px;
+    margin-top: 62px;
+}
+
+.rassilka-info{
+    padding: 0 20px; 
+    display: flex; 
+    align-items: stretch; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.rassilka-info-text{
+    font-size: 20px;
+}
+
+.rassilka-info-knopki{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+
+    margin-top: 13px;
+}
+
+.rassilka-pole input{
+    width: 315px;
+    padding: 10px 20px;
+    border: 1px solid #46B271;
+    border-radius: 13px;
+
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.rassilka-button{
+    outline: none; 
+}
+
+.rassilka-button button{
+    border: 2px solid transparent; 
+    background-color: var(--main-color-green); 
+    padding: 10px 20px;  
+    border-radius: 13px; 
+
+    margin-top: 10px;
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--main-color-white);
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+.rassilka-button button:hover{
+    background-color: var(--main-color-black); 
+    color: #FFFFFF; 
+    border: 2px solid #ffffff;
+}
+
+.rassilka-info-sogl{
+    margin-top: 35px;
+    font-size: 15px;
+    color: gray;
+}
+
+.rassilka-img img { 
+    width: 430px; 
+    height: 430px; 
+}
+
+.footer-wrapper{
+    background-color: var(--main-color-black);
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-messenger{
+    display: flex;
+    gap: 18px;
+    margin-right: 300px;
+}
+
+.footer-help{
+    display: flex;
+    gap:50px;
+    color: var(--main-color-white);
+}
+
+.novinki-product{ 
+    margin-top: 40px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+    align-items: center; 
+} 
+ 
+.novinki-products { 
+    display: flex; 
+    flex-flow: wrap; 
+    gap: 100px 170px; 
+    justify-content: center; 
+    text-align: center; 
+    align-items: center;
+}
+
+
+@media (max-width:1440px) {
+    .header-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:1300px) {
+   
+    .banner-wrapepr2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        font-size: 30px;
+    }
+
+    .banner-info{
+        padding: 100px;
+    }
+
+    .banner-img img{
+        width: 400px;
+        height: 400px;
+
+    }
+   
+    .banner-text{
+        font-size: 25px;
+        color: var(--main-color-black);
+        font-weight: 700;
+    }
+    .razdel-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .footer-wrapper{
+        background-color: var(--main-color-black);
+        padding: 0 20px;
+    }
+
+    .footer-messenger{
+        margin-right: 100px;
+    }
+}
+@media (max-width:1160px) {
+
+    .rassilka-wrapper{
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (max-width:1150px) {
+
+    .header-wrapper{
+        display: flex;
+        /* justify-content: center; */
+        gap: 100px;
+    }
+
+    .navigation{
+        gap: 30px;
+    }
+
+    .banner-button{
+        display: flex;
+        gap: 40px;
+    }
+    .banner-button button{
+        display: flex;
+        justify-content: center;
+
+        width: 200px;
+        height: 60px;
+    }
+
+    .hit-product-top{
+        display: flex;
+        gap: 90px;
+    }
+
+    .top-novinki{
+        display: flex;
+        gap: 60px;
+    }
+
+    .middle-novinki{
+        display: flex;
+        gap: 60px;
+    }
+
+    .bottom-novinki{
+        display: flex;
+        gap: 50px;
+    }
+
+    .rassilka-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .rassilka-info{
+        padding: 0px;
+    }
+
+    .rassilka-wrapper{
+        gap: 40px;
+    }
+
+    .footer-help{
+        gap: 15px;
+        font-size: 14px;
+    }
+    .footer-messenger img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-messenger{
+        margin-left:10px;
+    }
+}
+
+@media (max-width:1000px) {
+    .header-burger{
+        display: block;
+    }
+
+    .header-burger i{
+        cursor: pointer;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .icon{
+        display: none;
+    }
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 20px;
+    }
+
+    .rassilka-info h1{
+        font-size: 34px;
+    }
+
+    .rassilka-pole input{
+        font-size: 16px;
+    }
+
+    .rassilka-info-knopki{
+        gap: 20px;
+    }
+
+    .rassilka-info-sogl{
+        font-size: 13px;
+    }
+
+    .hit-product-top{
+        gap: 80px;
+    }
+
+    .razdel-wrapper img{
+        width: 245px;
+        height: 329px;
+    }
+
+    .razdel-wrapper h1{
+        font-size: 20px;
+    }
+
+    .rassilka-button button{
+        font-size: 16px;
+    }
+
+    .rassilka-info-knopki{
+        gap: 40px;
+    }
+}
+
+@media (max-width:950px) {
+    .hit-product-top{
+        gap: 90px;
+    }
+
+    .rassilka-pole input{
+        width: 300px;
+    }
+}
+
+@media (max-width:900px) {
+    .hit-product-bottom{
+        gap: 40px;
+    }
+
+    .top-novinki{
+        gap: 40px;
+    }
+
+    .middle-novinki{
+        gap: 40px;
+    }
+
+    .bottom-novinki{
+        gap: 40px;
+    }
+
+    .novinki-products{
+        gap: 100px;
+    }
+}
+
+@media (max-width:860px) {
+    .rassilka-img img{
+        width: 250px;
+        height: 280px;
+    }
+
+    .rassilka-pole input{
+        width: 250px;
+    }
+
+    .rassilka-button button{
+        font-size: 14px;
+    }
+
+    .footer-info p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .rassilka-info-knopki{
+        gap: 20px;
+    }
+
+    .rassilka-info p{
+        font-size: 12px;
+    }
+
+    .rassilka-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rassilka-wrapper { 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    } 
+ 
+    .footer-info { 
+        display: flex; 
+        justify-content: space-between; 
+        text-align: center; 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+ 
+    .footer-wrapper { 
+        padding: 0 0 20px; 
+    } 
+ 
+    .footer-messenger { 
+        margin: auto; 
+        margin-top: 20px; 
+        flex-direction: row; 
+    } 
+ 
+    .footer-help { 
+        display: flex; 
+        gap: 15px; 
+        margin-top: 40px; 
+        font-size: 14px; 
+        flex-direction: column; 
+    } 
+ 
+    .footer-info img { 
+        margin-top: 20px; 
+    } 
+} 
+ 
+@media (max-width:700px) { 
+    .novinki-products { 
+        gap: 70px; 
+    } 
+ 
+    .hit-product-top { 
+        display: flex; 
+        gap: 70px; 
+    } 
+
+    .rassilka-info h1 { 
+        text-align: center; 
+        font-size: 38px; 
+    }     
+}
+
+@media (max-width:400px) { 
+    .rassilka-info-knopki { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 20px; 
+        margin-top: 13px; 
+        align-items: center; 
+    } 
+ 
+    .rassilka-info h1 { 
+        text-align: center; 
+        font-size: 38px; 
+    } 
+ 
+    .rassilka-pole input { 
+        width: 300px; 
+        font-size: 22px; 
+    } 
+ 
+    .rassilka-button button { 
+        font-size: 20px; 
+        padding: 10px 25px; 
+    } 
+ 
+    .rassilka-info p { 
+        font-size: 14px; 
+        text-align: center; 
+    } 
+}
+
+
+
