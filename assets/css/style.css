@@ -77,7 +77,7 @@ button, input{
 
 .banner-wrapper2{
     display: flex;
-    gap: 100px;
+    gap: 250px;
 }
 
 .banner-info{
@@ -89,9 +89,11 @@ button, input{
 }
 
 .banner-img img{
-    width: 500px;
-    height: 500px;
-    display: none;
+    width: 360px;
+    height: 400px;
+    display: flex;
+
+    padding:20px 0 0 0 ;
 }
 
 .banner-text{
@@ -984,7 +986,7 @@ button, input{
     }
 
     .banner-info{
-        padding: 100px;
+        padding: 40px;
     }
 
     .banner-img img{
@@ -1013,6 +1015,13 @@ button, input{
         margin-right: 100px;
     }
 }
+
+@media (max-width:1260px) {
+    .banner-wrapper2{
+        gap: 185px;
+    }
+}
+
 @media (max-width:1160px) {
 
     .rassilka-wrapper{
@@ -1025,8 +1034,7 @@ button, input{
 @media (max-width:1150px) {
 
     .header-wrapper{
-        display: flex;
-        /* justify-content: center; */
+        display:flex;
         gap: 100px;
     }
 
@@ -1093,6 +1101,12 @@ button, input{
     }
 }
 
+@media (max-width:1100px) {
+    .banner-wrapper2{
+        gap: 130px;
+    }
+}
+
 @media (max-width:1000px) {
     .header-burger{
         display: block;
@@ -1152,15 +1166,29 @@ button, input{
     .rassilka-info-knopki{
         gap: 40px;
     }
+
+    .banner-text{
+        font-size: 20px;
+    }
+
+    .banner-wrapper2{
+        gap: 40px;
+    }
 }
 
-@media (max-width:950px) {
+@media (max-width:960px) {
     .hit-product-top{
         gap: 90px;
     }
 
     .rassilka-pole input{
         width: 300px;
+    }
+
+    .banner-wrapper2{
+        justify-content: center;
+        align-items: center;
+        gap: 0;
     }
 }
 
@@ -1184,6 +1212,16 @@ button, input{
     .novinki-products{
         gap: 100px;
     }
+
+    .banner-button button{
+        font-size: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner-button p{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:860px) {
@@ -1203,6 +1241,23 @@ button, input{
     .footer-info p{
         font-size: 12px;
     }
+
+    .banner-wrapepr2{
+        gap: 5px;
+    }
+
+    .banner-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .banner-wrapper2 {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    
 }
 
 @media (max-width:800px) {
@@ -1256,7 +1311,16 @@ button, input{
     .footer-info img { 
         margin-top: 20px; 
     } 
-} 
+
+    .banner-wrapper2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-info{
+        gap: 20px;
+    }
+}   
  
 @media (max-width:700px) { 
     .novinki-products { 
@@ -1272,6 +1336,22 @@ button, input{
         text-align: center; 
         font-size: 38px; 
     }     
+}
+
+@media (max-width:460px) {
+    .banner-text{
+        font-size: 16px;
+    }
+
+    .banner-img img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .banner-info{
+        padding: 0;
+        margin-top: 30px;
+    }
 }
 
 @media (max-width:400px) { 
@@ -1302,6 +1382,10 @@ button, input{
         font-size: 14px; 
         text-align: center; 
     } 
+
+    .banner-button{
+        gap: 20px;
+    }
 }
 
 
